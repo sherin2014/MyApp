@@ -65,7 +65,7 @@ export const registerUser = createAsyncThunk(
 );
 export const login = createAsyncThunk("users/login", async (userData) => {
   try {
-    const response = await axios.post(`https://myapp-server-qmdr.onrender.com1/login`, {
+    const response = await axios.post(`https://myapp-server-qmdr.onrender.com/login`, {
       email: userData.email,
       password: userData.password,
     });
