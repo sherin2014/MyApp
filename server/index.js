@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const connectString = `mongodb+srv://admin:admin123@postitcluster.mcba7vs.mongodb.net/?appName=PostITCluster`;
+const connectString = `mongodb+srv://admin:admin123@postitcluster.mcba7vs.mongodb.net/postITDb?appName=PostITCluster`;
 mongoose.connect(connectString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
